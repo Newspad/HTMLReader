@@ -95,6 +95,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (readonly, copy, nonatomic) HTMLArrayOf(NSString *) *textComponents;
 
+// TODO BEGIN: Added by Newspad
+
+- (void)addChild:(HTMLNode *)node updateParentNode:(BOOL)updateParentNode;
+
+- (void)removeChild:(HTMLNode *)node updateParentNode:(BOOL)updateParentNode;
+
+// TODO END: Added by Newspad
+
 /**
     Convenience method for either adding a string to an existing text node or creating a new text node.
  
